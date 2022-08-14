@@ -1,4 +1,4 @@
-# Temperature-Motherboard-Rev-Article
+# Temperature-Motherboard-v3.0-Article
 By: Adam McDonald, Electric Powertrain Design, University of Toronto Formula Racing
 
 Each year, the University of Toronto Formula Racing Team (UTFR) designs and builds a car to compete in international Formula SAE (Formula Student) events. As such, the team must ensure all elements of the vehicle, including the electric powertrain, comply entirely with Formula SAE regulations. This article will discuss the Research & Development project which investigated the possibility of using a new system architecture for the accumulator's temperature monitoring circuitry by outlining the purpose, functionality and design of the revised 'Temperature Motherboard' PCB. All of UTFR’s boards are fabricated in collaboration with JLCPCB (www.jlcpcb.com/RAT), a leading PCB manufacturer providing high quality, reliable, and cost-effective PCBs at a consistently rapid pace.
