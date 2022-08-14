@@ -19,13 +19,17 @@ This ensures a sufficient number of cell temperatures are continuously monitored
 
 ## Schematic and PCB Design
 
-The schematic and layout of the Temperature Motherboard PCB was designed using Altium Designer. The TS circuity is displayed on the left side of the schematic shown, with the analog temperature readings received as inputs through JST headers (J1-5). The five analog temperature signals are then each sent through AMC1311 2V unity-gain isolation amplifiers which isolate the TS and GLV systems. The AMC1311 chips produce differential pair output signals which are sent as the inputs to TLV6001 general purpose op-amps (5 total) to restore each of the 5 analog temperature readings as part of the GLV system.
+The schematic and layout of the Temperature Motherboard PCB was designed using Altium Designer. The TS circuity is displayed on the left side of the schematic shown below, with the analog temperature readings received as inputs through JST headers (J1-5). The five analog temperature signals are then each sent through AMC1311 2V unity-gain isolation amplifiers which isolate the signals between the TS and GLV systems. The AMC1311 chips produce differential pair output signals which are sent as the inputs to TLV6001 general purpose op-amps (5 total) to restore each of the 5 analog temperature readings as part of the GLV circuitry.
 
 The 5 analog temperature readings are then sent to an Arduino Micro (U1). A modular CAN node (CAN1) is used to send the collected temperatures to the BMS.
 
-The board also includes 5 B050LS-1WR3 isolated 5V DC/DC converters (PS1-5), which provide isolated power to each of the 55 on-segment boards.
+The board also includes 5 B050LS-1WR3 isolated 5V DC/DC converters (PS1-5), which provide isolated power to each of the 5 In-Segment boards.
+
+![image](https://user-images.githubusercontent.com/110572941/184552431-1b318664-081b-4132-8c40-63aba2157bd8.png)
 
 The Temperature Motherboard’s layout separates all GLV and TS circuits, as shown below. The input headers from the In-Segment boards, 5 B050LS-1WR3 chips (PS1-5) and 5 AMC1311 chips comprise the left side of the board, labelled TS. The right side of the board consists only of GLV components, such as the CAN module (CAN1), Arduino Micro (U1) and TLV6001 chips, to ensure GLV circuits cannot be exposed to high voltage.
+
+![image](https://user-images.githubusercontent.com/110572941/184552465-c9069537-8144-4fa5-9341-99ced5b06429.png)
 
 ## Ordering and Fabrication
 
