@@ -25,7 +25,7 @@ The 5 analog temperature readings are then sent to an Arduino Micro (U1). A modu
 
 The board also includes 5 B050LS-1WR3 isolated 5V DC/DC converters (PS1-5), which provide isolated power to each of the 5 In-Segment boards.
 
-![image](https://user-images.githubusercontent.com/110572941/184552431-1b318664-081b-4132-8c40-63aba2157bd8.png)
+![image](https://user-images.githubusercontent.com/110572941/184552540-ef7885cf-961c-4d49-baff-d6f350700424.png)
 
 The Temperature Motherboard’s layout separates all GLV and TS circuits, as shown below. The input headers from the In-Segment boards, 5 B050LS-1WR3 chips (PS1-5) and 5 AMC1311 chips comprise the left side of the board, labelled TS. The right side of the board consists only of GLV components, such as the CAN module (CAN1), Arduino Micro (U1) and TLV6001 chips, to ensure GLV circuits cannot be exposed to high voltage.
 
