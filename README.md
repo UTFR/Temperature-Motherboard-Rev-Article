@@ -19,7 +19,7 @@ This ensures a sufficient number of cell temperatures are continuously monitored
 
 ## Schematic and PCB Design
 
-The schematic and layout of the Temperature Motherboard PCB was designed using Altium Designer. The TS circuity is displayed on the left side of the schematic shown below, with the analog temperature readings received as inputs through JST headers (J1-5). The five analog temperature signals are then each sent through AMC1311 2V unity-gain isolation amplifiers which isolate the signals between the TS and GLV systems. The AMC1311 chips produce differential pair output signals which are sent as the inputs to TLV6001 general purpose op-amps (5 total) to restore each of the 5 analog temperature readings as part of the GLV circuitry.
+The schematic and layout of the Temperature Motherboard PCB was designed using Altium Designer. The TS circuity is displayed on the left side of the schematic shown below, with the analog temperature readings received as inputs through JST headers (J1-5). The five analog temperature signals are then each sent through AMC1311 2V unity-gain isolation amplifiers (U2, U4, U6, U8, U10) which isolate the signals between the TS and GLV systems. The AMC1311 chips produce differential pair output signals which are sent as the inputs to TLV6001 general purpose op-amps (U3, U5, U7, U9, U11) to restore each of the 5 analog temperature readings as part of the GLV circuitry.
 
 The 5 analog temperature readings are then sent to an Arduino Micro (U1). A modular CAN node (CAN1) is used to send the collected temperatures to the BMS.
 
